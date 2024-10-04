@@ -1,18 +1,18 @@
 <?php
 
-namespace phptest;
+namespace phptest\Oops;
 
-use phptest\Person;
-use phptest\Dog;
-use phptest\Cat;
-use phptest\Car;
-use phptest\Circle;
-use phptest\Rectangle;
-use phptest\FullTimeEmployee;
-use phptest\PartTimeEmployee;
-use phptest\Book;
+use phptest\Oops\Person;
+use phptest\Oops\Dog;
+use phptest\Oops\Cat;
+use phptest\Oops\Car;
+use phptest\Oops\Circle;
+use phptest\Oops\Rectangle;
+use phptest\Oops\FullTimeEmployee;
+use phptest\Oops\PartTimeEmployee;
+use phptest\Oops\Book;
 
-class main
+class Main
 {
     protected $info1;
     protected $dog;
@@ -25,45 +25,28 @@ class main
     protected $fullTimeEmployee;
     protected $partTimeEmployee;
     protected $book;
-    public function __construct(
-        Person $info1,
-        Dog $dog,
-        Cat $cat,
-        Car $hyundai,
-        Car $toyota,
-        Car $bmw,
-        Circle $circle,
-        Rectangle $rectangle,
-        PartTimeEmployee $partTimeEmployee,
-        FullTimeEmployee $fullTimeEmployee,
-        Book $book,
-    ) {
-        $this->info1 = $info1;
-        $this->dog = $dog;
-        $this->cat = $cat;
-        $this->hyundai = $hyundai;
-        $this->toyota = $toyota;
-        $this->bmw = $bmw;
-        $this->circle = $circle;
-        $this->rectangle = $rectangle;
-        $this->partTimeEmployee = $partTimeEmployee;
-        $this->fullTimeEmployee = $fullTimeEmployee;
-        $this->book = $book;
-    }
+
+    public function __construct() {}
 
     public function excecute()
     {
         //1
-        $info1 = $this->info1;
+        $info1 = new Person;
         $info1->name = "Long";
         $info1->age = 04;
         $info1->gender = "male";
+        $info1->introduce();
 
         //2
+        $dog = new Dog;
+        $cat = new Cat;
         echo $dog->makeSound();
-        echo $cate->makeSound();
+        echo $cat->makeSound();
 
         //3
+        $hyundai = new Car;
+        $toyota = new Car;
+        $bmw = new Car;
         $hyundai->setBrand("Hyundai ");
         $hyundai->setModel("Grand i10 ");
         $hyundai->setSpeed("100km/h <br/>");

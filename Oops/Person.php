@@ -1,6 +1,6 @@
 <?php
 
-namespace phptest;
+namespace phptest\Oops;
 
 //Tạo class và object
 class Person

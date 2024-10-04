@@ -1,8 +1,8 @@
 <?php
 
-namespace phptest;
+namespace phptest\Oops;
 
-use phptest\Animal;
+use phptest\Oops\Animal;
 
 class Dog extends Animal
 {

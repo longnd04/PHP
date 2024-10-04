@@ -1,8 +1,8 @@
 <?php
 
-namespace phptest;
+namespace phptest\Oops;
 
-use phptest\Employee;
+use phptest\Oops\Employee;
 
 class PartTimeEmployee extends Employee
 {

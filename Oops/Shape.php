@@ -1,6 +1,6 @@
 <?php
 
-namespace phptest;
+namespace phptest\Oops;
 
 abstract class Shape
 {
