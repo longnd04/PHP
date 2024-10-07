@@ -1,0 +1,24 @@
+<h1>Edit Student</h1>
+<form method='post' action=''>
+    <div class="form-group">
+        <label for="title">Name</label>
+        <?php
+        echo '<input type="text" class="form-control" id="name" placeholder="Enter a Name" name="name" value="' . $show->getName() . '">';
+        ?>
+    </div>
+
+    <div class="form-group">
+        <label for="title">Email</label>
+        <?php
+        echo '<input type="text" class="form-control" id="email" placeholder="Enter a Email" name="email" value="' . $show->getEmail() . '">';
+        ?>
+    </div>
+
+    <div class="form-group">
+        <label for="title">Age</label>
+        <?php
+        echo '<input type="text" class="form-control" id="age" placeholder="Enter a Age" name="age" value="' . $show->getAge() . '">';
+        ?>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

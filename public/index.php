@@ -1,8 +1,15 @@
 <?php
+
+define('WEBROOT', '/index.php');
+define('ROOT', str_replace("public/index.php", "", $_SERVER["SCRIPT_FILENAME"]));
 require('../vendor/autoload.php');
 
-use phptest\Oops\Main;
+use phptest\Config\Database;
+use phptest\Core\Controller;
+use phptest\Core\Student;
+use phptest\Router;
+use phptest\Request;
+use phptest\Dispatcher;
 
-
-$mains = new Main();
-$mains->excecute();
+$dispatch = new Dispatcher();
+$dispatch->dispatch();
